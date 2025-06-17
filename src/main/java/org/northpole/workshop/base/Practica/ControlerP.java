@@ -12,8 +12,8 @@ public class ControlerP {
     public static void main(String[] args) throws Exception{
         ControlerP obj = new ControlerP();
         obj.practica.cargar();
-        //obj.timeShellSort();
-        obj.timeQuickSort();
+        obj.timeShellSort();
+        //obj.timeQuickSort();
     }
 
     public void timeShellSort()throws Exception{

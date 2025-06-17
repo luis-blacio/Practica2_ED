@@ -1,21 +1,19 @@
 package org.northpole.workshop.base.controller.service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Arrays;
 
+import org.northpole.workshop.base.Utiles;
+import org.northpole.workshop.base.controller.dao.AdapterDao;
 import org.northpole.workshop.base.controller.dao.dao_models.DaoAlbum;
+import org.northpole.workshop.base.controller.dao.dao_models.DaoBanda;
 import org.northpole.workshop.base.controller.dao.dao_models.DaoCancion;
 import org.northpole.workshop.base.controller.dao.dao_models.DaoGenero;
-import org.northpole.workshop.base.controller.dao.dao_models.DaoBanda;
-import org.northpole.workshop.base.controller.dao.AdapterDao;
 import org.northpole.workshop.base.controller.datastruct.list.LinkedList;
-import org.northpole.workshop.base.models.Album;
 import org.northpole.workshop.base.models.Cancion;
-import org.northpole.workshop.base.models.Genero;
 import org.northpole.workshop.base.models.TipoArchivoEnum;
-import org.northpole.workshop.base.Utiles;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,7 +23,6 @@ import com.vaadin.hilla.BrowserCallable;
 import io.micrometer.common.lang.NonNull;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
-
 import jakarta.validation.constraints.NotNull;
 
 
@@ -57,9 +54,9 @@ public class CancionService {
     public void deleteCancion(@NonNull Integer id) throws Exception{
         if (id != null) {
             if (dc.delete(id)) {
-                System.out.println("aaaaaaa eliminado :)");
+                System.out.println(" se ha eliminado eliminado ");
             } else{
-                System.out.println("no se elimnio :(");
+                System.out.println("no se elimnio nada");
             }
         }
     }
@@ -80,9 +77,9 @@ public class CancionService {
             dc.getCancion().setTipo(TipoArchivoEnum.valueOf(tipo));
             dc.getCancion().setId_album(id_album);
             if(dc.save()){
-             System.out.println("aaaaaaa guardado");
+             System.out.println(" se ha  guardado");
             } else {
-                System.out.println("no se guardo");
+                System.out.println("no se ha  guardo");
             }
         }
     }
@@ -104,9 +101,9 @@ public class CancionService {
             dc.getCancion().setTipo(TipoArchivoEnum.valueOf(tipo));
             dc.getCancion().setId_album(id_album);
             if(dc.updateById(id)){
-                System.out.println("aaaaaaacutalizado");
+                System.out.println("se ha actualizado");
             } else{
-                System.out.println("no se actualizo");
+                System.out.println("no se ha actualizo");
             }
         }
     }
@@ -194,11 +191,6 @@ public class CancionService {
         daos.put("genero", dg);
         daos.put("album", da);
         LinkedList<Cancion> songs = new LinkedList<>();
-        System.out.println("EL VALOR TRANSFORMADO PA BUSCAR EN LOS DAOS >>>>>>>>>>>" + util.transformValue("nombre", dg.getGenero(), "Bachata").toString() );
-        System.out.println( "EL VALOR ENCONTRADO O NO EN LOS DAOS >>>>>>>>>" + util.searchInDaos( cs.dc.getCancion(),daos,util.transformValue("nombre", dg.getGenero(), "Bachata")).toString());
-        System.out.println("EL VALOR TRANSFORMADO PARA LA BUSQUEDA LINEAR >>>>>>>" + util.transformValue("id_album", cs.dc.getCancion(), util.searchInDaos( cs.dc.getCancion(),daos,util.transformValue("nombre", dg.getGenero(), "Bachata")).toString()) );
-        System.out.println("RESULTADO DE LA BUSQUEDA LINEAR >>>>>>" + cs.dc.listAll().binaryLinearSearch("id_album", util.transformValue("id_album", cs.dc.getCancion(), util.searchInDaos( cs.dc.getCancion(),daos,util.transformValue("nombre", dg.getGenero(), "Bachata")).toString()) ).print());
-
 songs = cs.dc.listAll().binaryLinearSearch("id_album", util.transformValue("id_album", cs.dc.getCancion(), util.searchInDaos( cs.dc.getCancion(),daos,util.transformValue("nombre", dg.getGenero(), "Canticos al sol")).toString()) );
         System.out.println(songs.print());
     }

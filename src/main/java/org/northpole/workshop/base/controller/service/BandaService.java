@@ -36,7 +36,7 @@ public class BandaService {
             db.getObj().setNombre(nombre);
             db.getObj().setFecha(fecha);
             if (!db.save()) 
-                throw new Exception("tu banda no existe :D");
+                throw new Exception("tu banda no existe ");
         }
     }
 
@@ -46,7 +46,7 @@ public class BandaService {
             db.getObj().setNombre(nombre);
             db.getObj().setFecha(fecha);
             if (!db.update(id - 1)) 
-                throw new Exception("tu banda no podra modificarse :D");
+                throw new Exception("tu banda no podra modificarse porque no existe ");
         }
     }
 
