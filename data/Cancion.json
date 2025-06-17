@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hell Bells",
+    "id_genero": 2,
+    "id_album": 1,
+    "duracion": 303,
+    "url": "https://www.youtube.com/watch?v\u003detAIpkdhU9Q",
+    "tipo": "VIRTUAL"
+  },
+  {
+    "id": 2,
+    "nombre": "In the end",
+    "id_genero": 5,
+    "id_album": 4,
+    "duracion": 352,
+    "url": "https://www.youtube.com/watch?v\u003deVTXPUF4Oz4\u0026pp\u003d0gcJCdgAo7VqN5tD",
+    "tipo": "FISICO"
+  },
+  {
+    "id": 3,
+    "nombre": "Narcisista por excelencia",
+    "id_genero": 2,
+    "id_album": 3,
+    "duracion": 359,
+    "url": "https://www.youtube.com/watch?v\u003dkP6_nlTdPgI\u0026pp\u003d0gcJCdgAo7VqN5tD",
+    "tipo": "VIRTUAL"
+  },
+  {
+    "id": 4,
+    "nombre": "Another One Bites the Dust",
+    "id_genero": 2,
+    "id_album": 5,
+    "duracion": 333,
+    "url": "https://www.youtube.com/watch?v\u003drY0WxgSXdEE\u0026pp\u003d0gcJCdgAo7VqN5tD",
+    "tipo": "FISICO"
+  },
+  {
+    "id": 5,
+    "nombre": "Still Loving You",
+    "id_genero": 5,
+    "id_album": 2,
+    "duracion": 448,
+    "url": "https://www.youtube.com/watch?v\u003d7pOr3dBFAeY",
+    "tipo": "FISICO"
+  }
+]

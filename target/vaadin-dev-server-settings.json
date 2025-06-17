@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "/Users/luis/Desktop/Practica2_ED/practica-3/src/main/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "/Users/luis/Desktop/Practica2_ED/practica-3/src/main/frontend/generated/jar-resources",
+  "staticOutput": "/Users/luis/Desktop/Practica2_ED/practica-3/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "/Users/luis/Desktop/Practica2_ED/practica-3/target/classes/META-INF/VAADIN/config",
+  "frontendBundleOutput": "/Users/luis/Desktop/Practica2_ED/practica-3/target/classes/META-INF/VAADIN/webapp",
+  "devBundleOutput": "/Users/luis/Desktop/Practica2_ED/practica-3/target/dev-bundle/webapp",
+  "devBundleStatsOutput": "/Users/luis/Desktop/Practica2_ED/practica-3/target/dev-bundle/config",
+  "jarResourcesFolder": "/Users/luis/Desktop/Practica2_ED/practica-3/src/main/frontend/generated/jar-resources",
+  "themeName": "default",
+  "clientServiceWorkerSource": "/Users/luis/Desktop/Practica2_ED/practica-3/target/sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}

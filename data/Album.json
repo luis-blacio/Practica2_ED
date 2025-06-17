@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "Black in Black",
+    "fecha": "Jan 20, 2016, 7:00:00 PM",
+    "id_banda": 3
+  },
+  {
+    "id": 2,
+    "nombre": "In trance",
+    "fecha": "May 5, 1994, 7:00:00 PM",
+    "id_banda": 2
+  },
+  {
+    "id": 3,
+    "nombre": "Sangre fria",
+    "fecha": "Feb 25, 1991, 7:00:00 PM",
+    "id_banda": 1
+  },
+  {
+    "id": 4,
+    "nombre": "Xero",
+    "fecha": "Mar 29, 2024, 7:00:00 PM",
+    "id_banda": 4
+  },
+  {
+    "id": 5,
+    "nombre": "The game",
+    "fecha": "May 30, 2025, 7:00:00 PM",
+    "id_banda": 5
+  }
+]
